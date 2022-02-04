@@ -1,7 +1,11 @@
-import React from "react";
+import Container from "components/elements/Container";
 
 function Login() {
-  return <h1>Login</h1>;
+    return (
+        <Container>
+            <h1>Login</h1>
+        </Container>
+    );
 }
 
 export default Login;
