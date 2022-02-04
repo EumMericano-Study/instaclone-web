@@ -1,9 +1,11 @@
 import { Container } from "components/elements";
+import { isLoggedInVar } from "apollo";
 
 function Home() {
     return (
         <Container>
-            <h1>home</h1>
+            <h1>Home</h1>
+            <button onClick={() => isLoggedInVar(false)}>Logout Now!</button>
         </Container>
     );
 }
