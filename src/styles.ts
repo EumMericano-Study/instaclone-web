@@ -3,20 +3,24 @@ import { createGlobalStyle, DefaultTheme } from "styled-components";
 import reset from "styled-reset";
 
 export const lightTheme: DefaultTheme = {
-    fontColor: COLOR.BLACK,
-    bgColor: COLOR.DARK_YELLOW,
+  bgColor: COLOR.DARK_YELLOW,
+  bgColor2: COLOR.YELLOW,
+  fontColor: COLOR.BLACK,
+  fontColor2: COLOR.DARK_ORANGE,
 };
 
 export const darkTheme: DefaultTheme = {
-    fontColor: COLOR.DARK_YELLOW,
-    bgColor: COLOR.BLACK,
+  bgColor: COLOR.BLACK,
+  bgColor2: COLOR.DARK_ORANGE,
+  fontColor: COLOR.DARK_YELLOW,
+  fontColor2: COLOR.YELLOW,
 };
 
 export const GlobalStyles = createGlobalStyle`
     ${reset}
     body {
-        background: ${(props) => props.theme.bgColor};
-        color: ${(props) => props.theme.fontColor};
+        background: ${({ theme }: { theme: DefaultTheme }) => theme.bgColor};
+        color: ${({ theme }: { theme: DefaultTheme }) => theme.fontColor};
         
         transition: color, background 0.2s ease-in;
 
