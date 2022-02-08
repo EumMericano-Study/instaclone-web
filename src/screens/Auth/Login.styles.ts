@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import OuterBox from "components/elements/OuterBox";
+import { OuterBox } from "components/elements";
 
 const Title = styled.h1`
   color: ${(props) => props.theme.fontColor};

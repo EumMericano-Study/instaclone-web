@@ -1,11 +1,11 @@
-import Container from "components/elements/Container";
+import { Container, CenterAlign } from "components/elements";
 
 import { TopBox, BottomBox, Title } from "./Login.styles";
 
 function Login() {
   return (
     <Container>
-      <div>
+      <CenterAlign>
         <TopBox>
           <h1>Instagram</h1>
           <form>
@@ -20,7 +20,7 @@ function Login() {
           <span>아직 회원가입을 하지 않으셨나요?</span>
           <a href="#">Sign up</a>
         </BottomBox>
-      </div>
+      </CenterAlign>
     </Container>
   );
 }
